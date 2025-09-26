@@ -6,8 +6,8 @@ const About = () => {
   const [modifiedValue, setModifiedValue] = useState('')
 
   const getValue = async () => {
-    const originalValue = (await import(`./diff-sample/original.txt?raw`)).default
-    const modifiedValue = (await import(`./diff-sample/modified.txt?raw`)).default
+    const originalValue = (await import(`@/assets/diff-sample/original.txt?raw`)).default
+    const modifiedValue = (await import(`@/assets/diff-sample/modified.txt?raw`)).default
     setOriginalValue(originalValue)
     setModifiedValue(modifiedValue)
   }

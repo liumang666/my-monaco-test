@@ -41,7 +41,7 @@ const Home = () => {
 
   const handleLanguageChange = async (languageId: string) => {
     setLanguage(languageId)
-    const result = (await import(`./home-samples/sample.${languageId}.txt?raw`)).default
+    const result = (await import(`@/assets/home-samples/sample.${languageId}.txt?raw`)).default
     setValue(result)
   }
 
